@@ -4,6 +4,8 @@ export EDITOR
 GPG_TTY=$(tty)
 export GPG_TTY
 
+set -o vi
+
 _direnv_hook() {
   eval "$(direnv export bash)";
 };
