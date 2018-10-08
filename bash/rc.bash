@@ -23,7 +23,7 @@ export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 # clone the fzf repo into .fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-# Setting ag as the default source for fzf
+# Setting rg as the default source for fzf
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,node_modules,target}/*" 2> /dev/null'
 
 # To apply the command to CTRL-T as well
