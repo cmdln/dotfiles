@@ -20,12 +20,6 @@ source ~/.cargo/env
 
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/cmdln/libexec/google-cloud-sdk/path.bash.inc' ]; then source '/home/cmdln/libexec/google-cloud-sdk/path.bash.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/home/cmdln/libexec/google-cloud-sdk/completion.bash.inc' ]; then source '/home/cmdln/libexec/google-cloud-sdk/completion.bash.inc'; fi
-
 # clone the fzf repo into .fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
