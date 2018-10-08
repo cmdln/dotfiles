@@ -1,0 +1,23 @@
+[Desktop Entry]
+Categories=Network;Security;
+Comment[en_US]=Enter passphrase to authenticate to the ssh agent
+Comment=Enter passphrase to authenticate to the ssh agent
+Encoding=UTF-8
+Exec=/usr/bin/ssh-add
+GenericName[en_US]=ssh-add
+GenericName=ssh-add
+Icon=ssh-askpass-gnome
+MimeType=
+Name[en_US]=SSH AskPass
+Name=SSH AskPass
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+TryExec=ssh-add
+Type=Application
+Version=1.0
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=
