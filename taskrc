@@ -54,3 +54,5 @@ report.status.columns=end.age,project,tags,description
 report.status.labels=Age,Project,Tags,Description
 report.status.sort=end+
 report.status.filter=tags.has:work and end:today
+context.workday=+work or due:today
+context=workday
