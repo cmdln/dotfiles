@@ -44,5 +44,5 @@ report.status.description=Everything completed so far today
 report.status.columns=uuid.short,end.age,project,tags,description
 report.status.labels=ID,Age,Project,Tags,Description
 report.status.sort=end+
-report.status.filter=tags.has:work and end:today
+report.status.filter=end:today
 context=work
