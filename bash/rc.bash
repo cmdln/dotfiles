@@ -20,8 +20,8 @@ source ~/.cargo/env
 
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
-# clone the fzf repo into .fzf
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+# install fzf with apt
+[ -f ~/Source/bash/fzf.bash ] && source ~/Source/bash/fzf.bash
 
 # Setting rg as the default source for fzf
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,node_modules,target}/*" 2> /dev/null'
