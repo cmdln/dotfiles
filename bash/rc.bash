@@ -42,3 +42,4 @@ function tmux_sync_env
     export ${external_env}
 }
 alias se="tmux_sync_env"
+alias mru="find . -type f ! -path \"./.git/*\" ! -path \"./target/*\" -printf \"\n%A+ %p\" | sort -r | head -n 20"
