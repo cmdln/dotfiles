@@ -32,9 +32,11 @@ include /usr/share/taskwarrior/dark-gray-blue-256.theme
 context.mobile=tag.has:sms or tag.has:meeting or tag.has:convo or tag.has:errand or tag.has:reminder or due:today or due.before:today
 context.work=+work or +journal or due:today or due.before:today or priority:H
 context.liminal=tag.has:liminal or due.before:today or due:today or priority:H
-context.home=-work or due:today or due.before:today or priority:H
+context.home=(-work and -backlog and -sideproject) or (due:today or due.before:today or priority:H)
 context.brewery=project:brewery or due:today or due.before:today or priority:H
 context.podcast=project:podcast or due:today or due.before:today or priority:H
+context.side-project=+side-project
+context.backlog=+backlog
 taskd.certificate=\/home\/cmdln\/.task\/Thomas_Gideon.cert.pem
 taskd.key=\/home\/cmdln\/.task\/Thomas_Gideon.key.pem
 taskd.ca=\/home\/cmdln\/.task\/ca.cert.pem
