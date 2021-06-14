@@ -3,6 +3,8 @@ export EDITOR
 
 GPG_TTY=$(tty)
 export GPG_TTY
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
 
 set -o vi
 
@@ -13,7 +15,7 @@ if ! [[ "$PROMPT_COMMAND" =~ _direnv_hook ]]; then
   PROMPT_COMMAND="_direnv_hook;$PROMPT_COMMAND";
 fi
 
-export NVM_DIR="/home/cmdln/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 source ~/.cargo/env
@@ -43,3 +45,5 @@ function tmux_sync_env
 }
 alias se="tmux_sync_env"
 alias mru="find . -type f ! -path \"./.git/*\" ! -path \"./target/*\" -printf \"\n%A+ %p\" | sort -r | head -n 20"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
